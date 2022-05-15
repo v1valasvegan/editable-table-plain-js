@@ -1,0 +1,107 @@
+body {
+  font-family: sans-serif;
+}
+
+.table {
+  box-sizing: border-box;
+  border-bottom: 1px solid #32cd32;
+  flex-direction: column;
+  margin-bottom: 40px;
+  padding: 5px;
+  display: flex;
+}
+
+.loader {
+  height: 300px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.header-cell {
+  width: 100%;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.row {
+  justify-content: space-around;
+  padding: 5px;
+  display: flex;
+}
+
+.row:not(:last-child) {
+  border-bottom: 1px solid #32cd32;
+}
+
+.cell {
+  width: 100%;
+  padding-left: 15px;
+}
+
+.button-icon {
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  transition: all .5 ease-in-out;
+  background-color: #0000;
+  border: none;
+  margin: 0 10px;
+}
+
+input {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 2px 5px;
+  font-size: 1rem;
+}
+
+.button-icon:hover {
+  transform: scale(1.1);
+}
+
+.delete {
+  background: url("delete.3bfbe32c.svg") center no-repeat;
+}
+
+.edit {
+  background: url("edit.cae6b514.svg") center no-repeat;
+}
+
+.save {
+  background: url("check.578cb439.svg") center no-repeat;
+}
+
+.cancel {
+  background: url("cross.87175723.svg") center no-repeat;
+}
+
+.invalid {
+  border-color: red;
+  margin-bottom: 10px;
+}
+
+.error-message {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+
+.invalid + .error-message {
+  color: red;
+  font-size: .5rem;
+  display: inline;
+}
+
+.cell, .label {
+  position: relative;
+}
+
+.label {
+  margin-right: 15px;
+}
+
+/*# sourceMappingURL=index.1303bb05.css.map */

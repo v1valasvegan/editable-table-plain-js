@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Editable table</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="table">
+        <div class="row">
+          <div class="header-cell">Name</div>
+          <div class="header-cell">Phone</div>
+          <div class="header-cell">Actions</div>
+        </div>
+        <div id="table-body" class="table-body"></div>
+      </div>
+    </div>
+    <form id="form" class="form">
+      <label class="label">
+        Name
+        <input name="name" type="text" placeholder="John Johnsson" />
+        <pre class="error-message">Name is required</pre>
+      </label>
+      <label class="label">
+        Phone
+        <input name="phone" type="text" placeholder="+7777777" />
+        <pre class="error-message">
+          Phone must contain only digits and single dashes, may start with "+"
+        </pre>
+      </label>
+      <button id="submit-button" type="submit" class="submit-button">
+        Add user
+      </button>
+    </form>
+  </body>
+</html>

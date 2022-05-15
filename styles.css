@@ -1,0 +1,107 @@
+body {
+  font-family: sans-serif;
+}
+
+.table {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid limegreen;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+}
+
+.loader {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-cell {
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+.row:not(:last-child) {
+  border-bottom: 1px solid limegreen;
+}
+
+.cell {
+  width: 100%;
+  padding-left: 15px;
+}
+
+.button-icon {
+  background-color: transparent;
+  border: none;
+  margin: 0 10px;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  transition: all 0.5 ease-in-out;
+}
+
+input {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 2px 5px;
+  font-size: 1rem;
+}
+
+.button-icon:hover {
+  transform: scale(1.1);
+}
+
+.delete {
+  background: url(./src/icons/delete.svg) center no-repeat;
+}
+
+.edit {
+  background: url(./src/icons/edit.svg) center no-repeat;
+}
+
+.save {
+  background: url(./src/icons/check.svg) center no-repeat;
+}
+
+.cancel {
+  background: url(./src/icons/cross.svg) center no-repeat;
+}
+
+.invalid {
+  border-color: red;
+  margin-bottom: 10px;
+}
+
+.error-message {
+  position: absolute;
+  display: none;
+  left: 0;
+  top: 20px;
+}
+
+.invalid + .error-message {
+  display: inline;
+  color: red;
+  font-size: 0.5rem;
+}
+
+.cell,
+.label {
+  position: relative;
+}
+
+.label {
+  margin-right: 15px;
+}
+
